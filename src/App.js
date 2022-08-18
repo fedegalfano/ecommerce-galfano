@@ -10,17 +10,16 @@ function ColorSchemesExample() {
           <Navbar.Brand href="#home">VachPalm</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Inicio</Nav.Link>
-            <Nav.Link href="#home">Nuestra Historia</Nav.Link>
+            <Nav.Link href="#home">Nosotros</Nav.Link>
             <Nav.Link href="#home">Productos</Nav.Link>
           </Nav>
         </Container>
-        <Container>
+        <Container className="justify-content-end">
           <Navbar.Brand href="#home">
             <img
-              src="/logo192.png"
+              src="/palma.png"
               width="30"
               height="30"
-              className="d-flex justify-content-end"
               alt="React Bootstrap logo"
             />
           </Navbar.Brand>
