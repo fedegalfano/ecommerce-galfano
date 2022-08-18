@@ -20,7 +20,7 @@ function ColorSchemesExample() {
               src="/logo192.png"
               width="30"
               height="30"
-              className="d-inline-block"
+              className="d-flex justify-content-end"
               alt="React Bootstrap logo"
             />
           </Navbar.Brand>
