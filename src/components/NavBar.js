@@ -9,9 +9,9 @@ function NavBar() {
         <Container>
           <Navbar.Brand href="#home">VachPalm</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Inicio</Nav.Link>
-            <Nav.Link href="#home">Nosotros</Nav.Link>
-            <Nav.Link href="#home">Productos</Nav.Link>
+            <Nav.Link href="#home">INICIO</Nav.Link>
+            <Nav.Link href="#home">NOSOTROS</Nav.Link>
+            <Nav.Link href="#home">PRODUCTOS</Nav.Link>
           </Nav>
         </Container>
         <Container className="justify-content-end">
