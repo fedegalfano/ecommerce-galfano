@@ -25,7 +25,6 @@ function NavBar() {
             />
           </Navbar.Brand>
           <CartWidget/>
-          <h5>2</h5>
         </Container>
       </Navbar>
     </>
