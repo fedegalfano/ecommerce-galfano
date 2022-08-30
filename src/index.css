@@ -27,3 +27,14 @@ code {
   padding: 5px;
   text-align: center;
 }
+
+.camiseta {
+  display: block;
+  width: 300px;
+}
+
+.camiseta img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
