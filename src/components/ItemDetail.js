@@ -10,8 +10,6 @@ const ItemDetail = ({data}) => {
             </div>
             <div>
                 <p>{data.description}</p>
-            </div>
-            <div>
                 <h4>Precio: ${data.price}</h4>
             </div>
         </div>
