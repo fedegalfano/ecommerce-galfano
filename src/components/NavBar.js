@@ -8,11 +8,11 @@ function NavBar() {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">VachPalm</Navbar.Brand>
+          <Navbar.Brand href='/'>Fechu Camisetas</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">INICIO</Nav.Link>
-            <Nav.Link href="#home">NOSOTROS</Nav.Link>
-            <Nav.Link href="#home">PRODUCTOS</Nav.Link>
+            <Nav.Link href="/">INICIO</Nav.Link>
+            <Nav.Link href="/categoria/argentina">ARGENTINA</Nav.Link>
+            <Nav.Link href="/categoria/europa">EUROPA</Nav.Link>
           </Nav>
         </Container>
         <Container className="justify-content-end">
@@ -24,7 +24,9 @@ function NavBar() {
               alt="React Bootstrap logo"
             />
           </Navbar.Brand>
-          <CartWidget/>
+          <Nav.Link href="/cart">
+            <CartWidget/>
+          </Nav.Link>
         </Container>
       </Navbar>
     </>
