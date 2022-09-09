@@ -1,6 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
+import { Link } from "react-router-dom";
+import ItemCount from './ItemCount.js';
 
 const ItemDetail = ({data}) => {
+    const [goToCart, setGoToCart] = useState(false);
+    const onAdd = (quantity) => {
+        setGoToCart(true);
+    }
     return (
         <>
         <div className="camiseta">
@@ -11,6 +17,11 @@ const ItemDetail = ({data}) => {
             <div>
                 <p>{data.description}</p>
                 <h4>Precio: ${data.price}</h4>
+                {
+                    goToCart
+                    ? <Link to='/cart'>Finalizar compra</Link>
+                    : <ItemCount initial={3} stock={5} onAdd={onAdd}/>
+                }
             </div>
         </div>
         </>

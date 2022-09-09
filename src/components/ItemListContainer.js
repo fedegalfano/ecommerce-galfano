@@ -1,9 +1,8 @@
-import ItemCount from './ItemCount.js';
 import ItemList from './ItemList';
 import { useState, useEffect } from 'react';
 import {useParams} from 'react-router-dom';
 
-const remerasfutbol = [
+const camisetas = [
     {
         id: 1,
         image: 'https://cdn.solodeportes.com.ar/media/catalog/product/cache/3cb7d75bc2a65211451e92c5381048e9/c/a/camiseta-de-rosario-central-under-armour-tercer-recambio-sponsor-700021360467427-1.jpg',
@@ -56,7 +55,7 @@ const ItemListContainer = (props) => {
     useEffect (() => {
         const getData = new Promise((resolve) => {
             setTimeout(() => {
-                resolve(remerasfutbol)
+                resolve(camisetas)
             }, 1000);
         });
         if (categoriaId) {
@@ -72,7 +71,6 @@ const ItemListContainer = (props) => {
     return (
         <>
         <h4>{props.greeting}</h4>
-        <ItemCount initial={1} stock={5} onAdd={onAdd}/>
         <ItemList data={data}/>
 
         </>

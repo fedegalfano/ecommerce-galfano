@@ -2,13 +2,13 @@ import React, {useState, useEffect} from "react";
 import ItemDetail from './ItemDetail';
 import {useParams} from 'react-router-dom';
 
-const remerasfutbol = [
+const camiseta = [
     {
         id: 1,
         image: 'https://cdn.solodeportes.com.ar/media/catalog/product/cache/3cb7d75bc2a65211451e92c5381048e9/c/a/camiseta-de-rosario-central-under-armour-tercer-recambio-sponsor-700021360467427-1.jpg',
         title: "Camiseta Rosario Central",
         price: 9000,
-        category: 'argentina'
+        category: 'argentina',
     },
     {
         id: 2,
@@ -56,7 +56,7 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         const getData = new Promise(resolve => {
             setTimeout(() => {
-                resolve(remerasfutbol);
+                resolve(camiseta);
             }, 3000);
         });
         getData.then(res => setData(res.filter(argentina => argentina.id === parseInt(detalleId))));
