@@ -57,9 +57,9 @@ const ItemDetailContainer = () => {
         const getData = new Promise(resolve => {
             setTimeout(() => {
                 resolve(camiseta);
-            }, 3000);
+            }, 2000);
         });
-        getData.then(res => setData(res.filter(argentina => argentina.id === parseInt(detalleId))));
+        getData.then(res => setData(res.find(argentina => argentina.id === parseInt(detalleId))));
     }, [detalleId])
 
     return (
