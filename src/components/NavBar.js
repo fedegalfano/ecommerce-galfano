@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from './CartWidget';
+import { NavLink } from 'react-bootstrap';
 
 function NavBar() {
   return (
@@ -10,13 +11,13 @@ function NavBar() {
         <Container>
           <Navbar.Brand href='/'>Fechu Camisetas</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="/">INICIO</Nav.Link>
-            <Nav.Link href="/categoria/argentina">ARGENTINA</Nav.Link>
-            <Nav.Link href="/categoria/europa">EUROPA</Nav.Link>
+            <NavLink to='/'>INICIO</NavLink>
+            <NavLink to='/categoria/argentina'>ARGENTINA</NavLink>
+            <NavLink to='/categoria/europa'>EUROPA</NavLink>
           </Nav>
         </Container>
         <Container className="justify-content-end">
-          <Navbar.Brand href="#home">
+          <Navbar.Brand to='/'>
             <img
               src="/palma.png"
               width="30"
@@ -24,9 +25,9 @@ function NavBar() {
               alt="React Bootstrap logo"
             />
           </Navbar.Brand>
-          <Nav.Link href="/cart">
+          <NavLink to='/cart'>
             <CartWidget/>
-          </Nav.Link>
+          </NavLink>
         </Container>
       </Navbar>
     </>
