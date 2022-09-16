@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from './CartWidget';
 import { NavLink } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -11,9 +12,9 @@ function NavBar() {
         <Container>
           <Navbar.Brand href='/'>Fechu Camisetas</Navbar.Brand>
           <Nav className="me-auto">
-            <NavLink to='/'>INICIO</NavLink>
-            <NavLink to='/categoria/argentina'>ARGENTINA</NavLink>
-            <NavLink to='/categoria/europa'>EUROPA</NavLink>
+            <Nav.Link as={Link} to='/'>INICIO</Nav.Link>
+            <Nav.Link as={Link} to='/categoria/argentina'>ARGENTINA</Nav.Link>
+            <Nav.Link as={Link} to='/categoria/europa'>EUROPA</Nav.Link>
           </Nav>
         </Container>
         <Container className="justify-content-end">
