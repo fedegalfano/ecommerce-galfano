@@ -38,3 +38,15 @@ code {
   height: 100%;
   object-fit: cover;
 }
+
+.itemCart {
+  display: flex;
+  border-bottom: 1px solid gray;
+  max-width: 500px;
+  margin: 5px auto;
+}
+
+.itemCart img {
+  width: 200px;
+  margin-right: 5px;
+}
