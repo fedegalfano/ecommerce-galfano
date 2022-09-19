@@ -8,13 +8,15 @@ const camiseta = [
         image: 'https://cdn.solodeportes.com.ar/media/catalog/product/cache/3cb7d75bc2a65211451e92c5381048e9/c/a/camiseta-de-rosario-central-under-armour-tercer-recambio-sponsor-700021360467427-1.jpg',
         title: "Camiseta Rosario Central",
         price: 9000,
-        category: 'argentina',
+        stock: 20,
+        category: 'argentina'
     },
     {
         id: 2,
         image: 'https://cdn.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/c/a/camiseta-de-river-adidas-tercer-recambio-roja-100020gh4572001-1.jpg',
         title: "Camiseta River Plate",
         price: 14000,
+        stock: 30,
         category: 'argentina'
     },
     {
@@ -22,6 +24,7 @@ const camiseta = [
         image: 'https://cdn.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/c/a/camiseta-de-boca-adidas-oficial-azul-69851978-100020ga7545001-1.jpg',
         title: "Camiseta Boca Juniors",
         price: 18000,
+        stock: 35,
         category: 'argentina'
     },
     {
@@ -29,6 +32,7 @@ const camiseta = [
         image: 'https://cdn.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/c/a/camiseta-ajax-adidas-oficial-blanca-100020h58243001-1.jpg',
         title: "Camiseta Ajax",
         price: 17000,
+        stock: 40,
         category: 'europa'
     },
     {
@@ -36,6 +40,7 @@ const camiseta = [
         image: 'https://cdn.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/c/a/camiseta-juventus-adidas-oficial-blanca-47902842-100020h38907001-1.jpg',
         title: "Camiseta Juventus",
         price: 17000,
+        stock: 45,
         category: 'europa'
     },
     {
@@ -43,6 +48,7 @@ const camiseta = [
         image: 'https://cdn.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/c/a/camiseta-manchester-city-puma-oficial-celeste-30096276-640020759202001-1.jpg',
         title: "Camiseta Manchester City",
         price: 16500,
+        stock: 50,
         category: 'europa'
     }
 ];

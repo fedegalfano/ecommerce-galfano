@@ -20,9 +20,9 @@ function NavBar() {
         <Container className="justify-content-end">
           <Navbar.Brand to='/'>
             <img
-              src="/palma.png"
-              width="30"
-              height="30"
+              src="/camiseta.png"
+              width="40"
+              height="40"
               alt="React Bootstrap logo"
             />
           </Navbar.Brand>
