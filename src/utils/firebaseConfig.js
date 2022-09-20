@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore, where } from "firebase/firestore";
-import { collection, getDocs, query } from 'firebase/firestore';
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -14,20 +14,4 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
-
-export const firestoreFetch = async (categoriaId) => {
-    let q;
-    if (categoriaId) {
-       q = query(collection(db, "products", where('category', '==', categoriaId)));
-    } else {
-        q = query(collection(db, "products"));
-    }
-    const querySnapshot = await getDocs(q);
-    const dataFromFirestore = querySnapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data()
-    }))
-    return dataFromFirestore
-}
+initializeApp(firebaseConfig);

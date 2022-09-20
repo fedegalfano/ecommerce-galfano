@@ -1,7 +1,8 @@
 import ItemList from './ItemList';
 import { useState, useEffect } from 'react';
+import {getFirestore, collection, getDocs, query, where} from 'firebase/firestore';
 import {useParams} from 'react-router-dom';
-import { firestoreFetch } from '../utils/firebaseConfig';
+import { getDefaultNormalizer } from '@testing-library/react';
 
 const ItemListContainer = (props) => { 
     const [data, setData] = useState([]);
@@ -9,13 +10,18 @@ const ItemListContainer = (props) => {
     const {categoriaId} = useParams();
 
     useEffect (() => {
-        firestoreFetch(categoriaId)
-        .then(result => setData(result))
-    }, [data]);
-
-    const onAdd = (quantity) => {
-        console.log(`Compraste ${quantity} unidades`)
-    }
+        const querydb = getFirestore();
+        const queryCollection = collection (querydb, 'products');
+        if (categoriaId) {
+            const queryFilter = query(queryCollection, where('category', '==', categoriaId))
+            getDocs(queryFilter)
+            .then(res => setData(res.docs.map(product => ({id: product.id, ...product.data()}))))
+        } else {
+            getDocs(queryCollection)
+            .then(res => setData(res.docs.map(product => ({id: product.id, ...product.data()}))))
+        }
+    }, [categoriaId]);
+    
     return (
         <>
         <h4>{props.greeting}</h4>
