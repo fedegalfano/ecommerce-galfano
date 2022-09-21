@@ -2,7 +2,6 @@ import ItemList from './ItemList';
 import { useState, useEffect } from 'react';
 import {getFirestore, collection, getDocs, query, where} from 'firebase/firestore';
 import {useParams} from 'react-router-dom';
-import { getDefaultNormalizer } from '@testing-library/react';
 
 const ItemListContainer = (props) => { 
     const [data, setData] = useState([]);

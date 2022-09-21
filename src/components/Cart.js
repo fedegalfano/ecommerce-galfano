@@ -3,6 +3,7 @@ import {addDoc, getFirestore, collection} from 'firebase/firestore';
 import { useCartContext } from "../context/CartContext";
 import { Link } from "react-router-dom";
 import ItemCart from './ItemCart';
+import swal from 'sweetalert';
 
 const Cart = () => {
     const {cart, totalPrice} = useCartContext();
@@ -24,6 +25,16 @@ const Cart = () => {
         const ordersCollection = collection(db, 'orders');
         addDoc(ordersCollection, order)
         .then(({id}) => console.log(id))
+        alerta();
+    }
+
+    const alerta = () => {
+        swal({
+            title: "¡Felicitaciones!",
+            text: "Tu compra ha sido generada con éxito",
+            icon: "success",
+            button: "Aceptar"
+        });
     }
 
     if (cart.length === 0) {
