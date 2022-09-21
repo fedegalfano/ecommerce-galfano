@@ -1,5 +1,5 @@
-# OLLIAN
-## Descripcion del proyecto
+# Fechu Camisetas
+## Descripción del proyecto
 El proyecto esta basado en la simulacion de un e-commerce, para que en un futuro se combierta en una pagina 100% funcional. Fechu Camisetas es un emprendimiento que necesita dar el salto mediante un e-commerce.
 ## Tecnologias usadas
 - React
