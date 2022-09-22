@@ -30,10 +30,10 @@ const Cart = () => {
 
     const alerta = () => {
         swal({
-            title: "¡Felicitaciones!",
+            title: "Felicitaciones",
             text: "Tu compra ha sido generada con éxito",
             icon: "success",
-            button: "Aceptar"
+            button: "Aceptar",
         });
     }
 
