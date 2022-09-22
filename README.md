@@ -16,4 +16,4 @@ El proyecto esta basado en la simulacion de un e-commerce, para que en un futuro
 - Luego, ejecutar "npm start"
 - Abrir el buscador y dirigirse a la url http://localhost:3000/
 ## Video recorrido
-- https://user-images.githubusercontent.com/103077832/191749796-52d29115-aaba-4137-b259-fba9cd2c0848.gif
+- https://github.com/fedegalfano/ecommerce-galfano/issues/1
