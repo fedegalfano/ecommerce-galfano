@@ -16,4 +16,4 @@ El proyecto esta basado en la simulacion de un e-commerce, para que en un futuro
 - Luego, ejecutar "npm start"
 - Abrir el buscador y dirigirse a la url http://localhost:3000/
 ## Video recorrido
-- ![Fechu Camisetas - Personal_ Microsoft_ Edge 2022-09-21 16-01-16](https://user-images.githubusercontent.com/103077832/191751040-4a3a9e45-aa81-4084-884b-1cfb55cbb33a.gif)
+![Fechu Camisetas - Personal_ Microsoft_ Edge 2022-09-21 16-01-16](https://user-images.githubusercontent.com/103077832/191751040-4a3a9e45-aa81-4084-884b-1cfb55cbb33a.gif)
